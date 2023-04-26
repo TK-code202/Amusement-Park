@@ -1,5 +1,6 @@
 $(document).ready(function() {
     
+    // Safety Form 
     $("#formOne").submit(function (event){
         const height = $("input#user-height").val();
         if (height <= 155 && height >= 138 ) {
@@ -35,6 +36,7 @@ $(document).ready(function() {
                 $(".safe").show();
                 $(".warnThree").hide();
             });
+
         } else if (height <= 137 && height >= 128) {
             $(".displayTwo").show();
             $(".gallerySix").removeClass("highlight");
@@ -66,6 +68,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").show();
         });
+
         } else if (height <= 127 && height >= 98) {
             $(".displayThree").show();
             $(".gallerySix").removeClass("highlight");
@@ -100,6 +103,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").show();
             });
+
         } else if (height <= 97 && height >= 83) {
             $(".displayFour").show();
             $(".gallerySix").removeClass("highlight");
@@ -132,6 +136,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").show();
             });
+
         } else if (height <= 83 && height >= 75) {
             $(".displayFive").show();
             $(".gallerySix").removeClass("highlight");
@@ -164,6 +169,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").show();
             });
+
         } else if (height <= 74 ) {
             $(".warnTwo").show();
             $(".gallerySix").removeClass("highlight");
@@ -198,6 +204,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").hide();
             });
+            
         } else {
             $(".warn").show();
             $(".gallerySix").removeClass("highlight");
