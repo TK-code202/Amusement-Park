@@ -1,8 +1,9 @@
+// User Interface Logic
 $(document).ready(function() {
     
     // Safety Form 
     $("#formOne").submit(function (event){
-        
+
         const height = $("input#user-height").val();
         if (height <= 155 && height >= 138 ) {
             $(".displayOne").show();
