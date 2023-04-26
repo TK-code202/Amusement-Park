@@ -2,6 +2,7 @@ $(document).ready(function() {
     
     // Safety Form 
     $("#formOne").submit(function (event){
+        
         const height = $("input#user-height").val();
         if (height <= 155 && height >= 138 ) {
             $(".displayOne").show();
@@ -204,7 +205,7 @@ $(document).ready(function() {
                 $(".warnThree").hide();
                 $(".safe").hide();
             });
-            
+
         } else {
             $(".warn").show();
             $(".gallerySix").removeClass("highlight");
